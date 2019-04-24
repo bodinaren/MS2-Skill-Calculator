@@ -87,8 +87,6 @@
 		
 			<div id="window">
 				
-				<div id="lines"></div>
-				
 				<div id="drag_bar"></div>
 				
 				<div id="jobName"><p>Knight</p></div>
@@ -98,25 +96,25 @@
 					<button type="button" class="btn dropdown-toggle"
 					data-toggle="dropdown" data-offset="2,0" aria-haspopup="true" aria-expanded="false"></button>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" onclick="changeJob(knight_skills, 'Knight')" href="#">Knight</a>
-						<a class="dropdown-item" onclick="changeJob(berserker_skills, 'Berserker')" href="#">Berserker</a>
-						<a class="dropdown-item" onclick="changeJob(wizard_skills, 'Wizard')" href="#">Wizard</a>
-						<a class="dropdown-item" onclick="changeJob(priest_skills, 'Priest')" href="#">Priest</a>
-						<a class="dropdown-item" onclick="changeJob(archer_skills, 'Archer')" href="#">Archer</a>
-						<a class="dropdown-item" onclick="changeJob(heavy_gunner_skills, 'Heavy Gunner')" href="#">Heavy Gunner</a>
-						<a class="dropdown-item" onclick="changeJob(thief_skills, 'Thief')" href="#">Thief</a>
-						<a class="dropdown-item" onclick="changeJob(assassin_skills, 'Assassin')" href="#">Assassin</a>
-						<a class="dropdown-item" onclick="changeJob(runeblade_skills, 'Runeblade')" href="#">Runeblade</a>
-						<a class="dropdown-item" onclick="changeJob(soul_binder_skills, 'Soul Binder')" href="#">Soul Binder</a>
-						<a class="dropdown-item" onclick="changeJob(striker_skills, 'Striker')" href="#">Striker</a>
+						<a class="dropdown-item" onclick="changeJob('knight', 'Knight')" href="#">Knight</a>
+						<a class="dropdown-item" onclick="changeJob('berserker', 'Berserker')" href="#">Berserker</a>
+						<a class="dropdown-item" onclick="changeJob('wizard', 'Wizard')" href="#">Wizard</a>
+						<a class="dropdown-item" onclick="changeJob('priest', 'Priest')" href="#">Priest</a>
+						<a class="dropdown-item" onclick="changeJob('archer', 'Archer')" href="#">Archer</a>
+						<a class="dropdown-item" onclick="changeJob('heavy-gunner', 'Heavy Gunner')" href="#">Heavy Gunner</a>
+						<a class="dropdown-item" onclick="changeJob('thief', 'Thief')" href="#">Thief</a>
+						<a class="dropdown-item" onclick="changeJob('assassin', 'Assassin')" href="#">Assassin</a>
+						<a class="dropdown-item" onclick="changeJob('runeblade', 'Runeblade')" href="#">Runeblade</a>
+						<a class="dropdown-item" onclick="changeJob('soul-binder', 'Soul Binder')" href="#">Soul Binder</a>
+						<a class="dropdown-item" onclick="changeJob('striker', 'Striker')" href="#">Striker</a>
 					</div>
 				</div>
 			
-				<div class="row" id="skills_right">
-				
+				<div id="skills_right">
+					<ms-knight editable extras id="chart"></ms-knight>
 				</div>
 				
-				<div id="skill_points"><p>Remaining Skill Points: </p><p id="skillPointNumber">0</p></div>
+				<div id="skill_points"><p>Remaining Skill Points: </p><p id="skillPointNumber"><ms-extra-counter></ms-extra-counter></p></div>
 				
 				<div id="resetSkills" onclick="resetSkills()"></div>
 
@@ -143,17 +141,17 @@
 					<button type="button" class="btn dropdown-toggle"
 					data-toggle="dropdown" data-offset="-40,5" aria-haspopup="true" aria-expanded="false"></button>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" onclick="changeJob(knight_skills, 'Knight')" href="#">Knight</a>
-						<a class="dropdown-item" onclick="changeJob(berserker_skills, 'Berserker')" href="#">Berserker</a>
-						<a class="dropdown-item" onclick="changeJob(wizard_skills, 'Wizard')" href="#">Wizard</a>
-						<a class="dropdown-item" onclick="changeJob(priest_skills, 'Priest')" href="#">Priest</a>
-						<a class="dropdown-item" onclick="changeJob(archer_skills, 'Archer')" href="#">Archer</a>
-						<a class="dropdown-item" onclick="changeJob(heavy_gunner_skills, 'Heavy Gunner')" href="#">Heavy Gunner</a>
-						<a class="dropdown-item" onclick="changeJob(thief_skills, 'Thief')" href="#">Thief</a>
-						<a class="dropdown-item" onclick="changeJob(assassin_skills, 'Assassin')" href="#">Assassin</a>
-						<a class="dropdown-item" onclick="changeJob(runeblade_skills, 'Runeblade')" href="#">Runeblade</a>
-						<a class="dropdown-item" onclick="changeJob(soul_binder_skills, 'Soul Binder')" href="#">Soul Binder</a>
-						<a class="dropdown-item" onclick="changeJob(striker_skills, 'Striker')" href="#">Striker</a>
+						<a class="dropdown-item" onclick="changeJob('knight', 'Knight')" href="#">Knight</a>
+						<a class="dropdown-item" onclick="changeJob('berserker', 'Berserker')" href="#">Berserker</a>
+						<a class="dropdown-item" onclick="changeJob('wizard', 'Wizard')" href="#">Wizard</a>
+						<a class="dropdown-item" onclick="changeJob('priest', 'Priest')" href="#">Priest</a>
+						<a class="dropdown-item" onclick="changeJob('archer', 'Archer')" href="#">Archer</a>
+						<a class="dropdown-item" onclick="changeJob('heavy-gunner', 'Heavy Gunner')" href="#">Heavy Gunner</a>
+						<a class="dropdown-item" onclick="changeJob('thief', 'Thief')" href="#">Thief</a>
+						<a class="dropdown-item" onclick="changeJob('assassin', 'Assassin')" href="#">Assassin</a>
+						<a class="dropdown-item" onclick="changeJob('runeblade', 'Runeblade')" href="#">Runeblade</a>
+						<a class="dropdown-item" onclick="changeJob('soul-binder', 'Soul Binder')" href="#">Soul Binder</a>
+						<a class="dropdown-item" onclick="changeJob('striker', 'Striker')" href="#">Striker</a>
 					</div>
 				</div>
 			
@@ -161,39 +159,6 @@
 			
 		</div>
 	
-	</div>
-	
-	<div id="info_box">
-		
-		<div id="info_name"><p></p></div>
-		
-		<div id="info_element"><p></p></div>
-		
-		<div id="info_content">
-		
-			<div id="info_image_box">
-				<div id="info_image"></div>
-			</div>
-			
-			<div id="info_top_description">
-			
-				<div class="info_resource"></div>
-				<div class="info_level"></div>
-			
-			</div>
-			
-			<div id="info_description"></div>
-			
-			<div class="info_linebreak"></div>
-			
-			<div id="info_description_2"></div>
-			
-			<div class="info_linebreak"></div>
-		
-			<div id="info_description_3"></div>
-		
-		</div>
-		
 	</div>
 	
 	<!-- Skill Calc End -->
@@ -207,19 +172,8 @@
 			$("#new_bg").css("background-image", "url('./images/bg_1.jpg')");
 		}, 500);
 	</script>
-	
-	<!-- Info JavaScript -->
-	<script type="text/javascript" src="scripts/knight.js"></script>
-	<script type="text/javascript" src="scripts/berserker.js"></script>
-	<script type="text/javascript" src="scripts/wizard.js"></script>
-	<script type="text/javascript" src="scripts/priest.js"></script>
-	<script type="text/javascript" src="scripts/archer.js"></script>
-	<script type="text/javascript" src="scripts/heavy_gunner.js"></script>
-	<script type="text/javascript" src="scripts/thief.js"></script>
-	<script type="text/javascript" src="scripts/assassin.js"></script>
-	<script type="text/javascript" src="scripts/runeblade.js"></script>
-	<script type="text/javascript" src="scripts/soul_binder.js"></script>
-	<script type="text/javascript" src="scripts/striker.js"></script>
+
+	<script src="https://unpkg.com/maplestory-skills@~1.6/dist/maplestory-skills.js"></script>
 	
 	<!-- jQuery, Popper, Bootstrap -->
 	<script src="scripts/jquery.slim.min.js"></script>

@@ -57,175 +57,17 @@ div{
 	display: block;
 	position: absolute;
 	top: 100px;
-	left: 20%;
 	margin-bottom: 20px;
-	margin: auto;
-}
-
-#lines{
-	background-image:url('../images/lines/knight_lines.png');
-	position: absolute;
-	width: 847px;
-	height: 910px;
-}
-
-.row{
-	position: relative;
-	left: 110px;
-	width: 747px;
-	height: 772px;
-}
-
-.col-3{
-	position: relative;
-	top: 80px;
-	border-radius: 24px;
-	width: 100px;
-}
-
-.skill_box{
-	width: 110px;
-	height: 113px;
-	margin: 10px;
-}
-
-.bar{
-	position: relative;
-	background-position: 0 -95px;
-	width: 107px;
-	height: 36px;
-	top: 77px;
-	left: 2px;
-}
-
-.skill_text{
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 10px;
-	font-size: 14px;
-}
-
-.plus{
-	position: relative;
-	left: 80px;
-	top: 5px;
-	background-position: -443px -39px;
-	width: 30px;
-	height: 36px;
-	cursor: pointer;
-}
-
-.minus{
-	position: relative;
-	top: 41px;
-	background-position: -443px 0;
-	width: 30px;
-	height: 36px;
-	cursor: pointer;
-}
-
-.max{
-	position: relative;
-	top: 41px;
-	background-position: -251px 0;
-	width: 30px;
-	height: 36px;
-	cursor: pointer;
-}
-
-.min{
-	position: relative;
-	left: 80px;
-	top: 5px;
-	background-position: -347px 0;
-	width: 30px;
-	height: 36px;
-	cursor: pointer;
-}
-
-.plus:not(.plus_locked):hover{
-	background-position: -475px -39px;
-}
-
-.minus:not(.minus_locked):hover{
-	background-position: -475px 0;
-}
-
-.max:not(.max_locked):hover{
-	background-position: -283px 0;
-}
-
-.min:not(.min_locked):hover{
-	background-position: -379px 0;
-}
-
-.plus_locked{
-	background-position: -507px -39px;
-}
-
-.minus_locked{
-	background-position: -507px 0;
-}
-
-.max_locked{
-	background-position: -315px 0;
-}
-
-.min_locked{
-	background-position: -411px 0;
-}
-
-.skill{
-	background-position: -368px -39px;
-	position: relative;
-	left: 19px;
-	top: 2px;
-	width: 72px;
-	height: 84px;
-	z-index: 2;
-}
-
-.skill:hover:after{
-	content: "";
-	position: absolute;
-	width: 73px;
-	height: 81px;
-	background-position: -294px -39px;
-}
-
-.point_box{
-	position: relative;
-	left: 0px;
-	top: -185px;
-}
-
-.skillImage{
-	position: relative;
-	width: 86px;
-	height: 100px;
-	background-size: contain;
-	top: -90px;
-	left: 12px;
-	z-index: 1;
-	transform: scale(0.5);
-}
-
-#drag_bar{
-    position: absolute;
-    width: 847px;
-    height: 52px;
-    top: 13px;
-	z-index: 10;
+	left: 50%;
+	margin-left: -423px;
 }
 
 #skill_points{
-    position: relative;
-    width: 270px;
-    height: 34px;
-    top: 87px;
-    left: 17px;
+	position: relative;
+	width: 270px;
+	height: 34px;
+	top: 2px;
+	left: 17px;
 	margin: 0;
 }
 
@@ -250,11 +92,11 @@ div{
 }
 
 #resetSkills{
-    position: relative;
-    width: 99px;
-    height: 36px;
-    left: 293px;
-    top: 53px;
+	position: relative;
+	width: 99px;
+	height: 36px;
+	left: 293px;
+	top: -31px;
 	margin: 0;
 	cursor: pointer;
 }
@@ -272,7 +114,7 @@ div{
     width: 148px;
     height: 38px;
     left: 400px;
-    top: 16px;
+    top: -68px;
 	margin: 0 auto;
 	cursor: pointer;
 	background-image: linear-gradient(#EEEEEE, #C5C5C5, #F6F6F6);
@@ -332,7 +174,7 @@ div{
 	display: none;
 	position: relative;
 	left: 400px;
-	top: 16px;
+	top: -68px;
 	line-height: 25px;
 }
 
@@ -345,9 +187,9 @@ div{
 
 #loadSkillBuild{
 	position: relative;
-    height: 38px;
-    left: 553px;
-    top: 16px;
+	height: 38px;
+	left: 553px;
+	top: -68px;
 	margin: 0;
 	cursor: pointer;
 }
@@ -372,13 +214,13 @@ div{
     width: 119px;
     height: 36px;
     left: 708px;
-	bottom: 20px;
+	bottom: 104px;
 }
 
 #jobDrop{
     position: relative;
     left: 708px;
-    bottom: 55px;
+    bottom: 140px;
 }
 
 #jobDrop2{
@@ -438,11 +280,11 @@ header{
 }
 
 #jobName{
-    position: absolute;
-    left: 149px;
-    top: 34px;
-    width: 165px;
-    height: 31px;
+	position: absolute;
+	left: 149px;
+	top: 34px;
+	width: 165px;
+	height: 31px;
 	text-align: center;
 }
 
@@ -452,206 +294,23 @@ header{
 	text-shadow: white 2px 2px;
 }
 
-.locked:before{
-	content: "";
-	position: absolute;
-	width: 28px;
-	height: 28px;
-    margin-left: 41px;
-    margin-top: 30px;
-	background-position: -445px -80px;
-	z-index: 2;
-	pointer-events: none;
-}
-
-.skill_12:before{
-	content: "";
-	width: 28px;
-	height: 22px;
-	background-position: -478px -82px;
-    transform: scale(0.6);
-    position: absolute;
-    left: 3px;
-    top: 51px;
-    z-index: 5;
-}
-
 #container {
    min-height:100%;
    position:relative;
 }
 
-/*
-	------------------------------ INFO STUFF ------------------------------
-*/
-
-#info_description p{
-	margin: 0;
-	padding: 0;
-}
-
-#info_description_2 p{
-	margin: 0;
-	padding: 0;
-}
-
-#info_description_3 p{
-	margin: 0;
-	padding: 0;
-}
-
-#info_box{
-	position: absolute;
-	left: 100px;
-	top: 100px;
-	border: 1px solid rgba(55,55,55,.9);
-	box-shadow: 0px 0px 5px #000;
-	border-radius: 4px;
-	display: none;
-	z-index: 25;
-}
-
-#info_name{
-	width: 350px;
-	height: 40px;
-	background-color: rgba(25,25,25,.95);
-	float: left;
-	display: flex;
-	align-items: center;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-}
-
-#info_name p{
-	margin-left: 10px;
-	color: white;
-	font-size: 16px;
-	text-shadow: black 1px 2px;
-    position: relative;
-    top: 9px;
-}
-
-#info_element{
-	position: absolute;
-	width: 350px;
-	height: 40px;
-	text-align: right;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	padding-right: 10px;
-	box-shadow: 0px 1px 1px #444;
-}
-
-#info_element p{
-	margin-left: 10px;
-	color: white;
-	font-size: 14px;
-	text-shadow: black 1px 2px;
-    position: relative;
-    top: 8px;
-}
-
-#info_content{
-	margin-top: 40px;
-	width: 350px;
-	background-color: rgba(0,0,0,.9);
-	padding: 10px;
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-}
-
-#info_image_box{
-	width: 50px;
-	height: 50px;
-	float: left;
-	background-color: #434343;
+#skills_right {
+	margin-top: 79px;
+	margin-left: 15px;
 	border-radius: 6px;
-	border: 3px solid #333333;
-	display: flex;
+	height: 777px;
+	width: 818px;
+	background-color: #1d1d1d;
+	overflow: hidden;
 }
-
-#info_image{
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 96px;
-	height: 100px;
-	transform: scale(0.8);
-	position: relative;
-	top: -8px;
-}
-
-#info_top_description{
-	float: left;
-	margin: 8px;
-}
-
-#info_description{
-	clear: both;
-}
-
-.info_linebreak{
-	height: 1px;
-	width: 100%;
-	background-color: #666;
-	margin: 5px 0px;
-}
-
-.info_resource{
-	color: white;
-	font-size: 14px;
-}
-
-.info_level{
-	color: white;
-	font-size: 18px;
-}
-
-.info_gray{
-	color: #777;
-	font-size: 12px;
-}
-
-.info_orange{
-	color: #a98104;
-	font-size: 12px;
-}
-
-.info_red{
-	color: #a90404;
-	font-size: 12px;
-}
-
-.info_blue{
-	color: #0082c5;
-	font-size: 12px;
-}
-
-.info_emphasis{
-	font-style: italic;
-	color: #777;
-}
-
-.element_holy{
-	background: url(../images/elements.png) 350px 98px;
-}
-
-.element_dark{
-	background: url(../images/elements.png) 350px -3px;
-}
-
-.element_fire{
-	background: url(../images/elements.png) 0px -3px;
-}
-
-.element_ice{
-	background: url(../images/elements.png) 350px 43px;
-}
-
-.element_electric{
-	background: url(../images/elements.png) 0px 43px;
-}
-
-.element_toxic{
-	background: url(../images/elements.png) 350px -58px;
+ms-archer, ms-assassin, ms-berserker, ms-heavy-gunner, ms-knight,
+ms-priest, ms-runeblade, ms-striker, ms-thief, ms-wizard {
+	transform-origin: top left;
+	transform: scale(1.005);
+	overflow: hidden;
 }
